@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "VAPT Session Proxy",
+  "version": "1.0.0",
+  "description": "Chrome-native VAPT extension for real-time CDP HTTP interception, token capture, and session-swapping for BOLA and privilege escalation testing.",
+  "permissions": [
+    "debugger",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "VAPT Session Proxy"
+  }
+}
